@@ -11,6 +11,7 @@ class VitaLizeApp:
 
 def main():
     root = tk.Tk()
+    root.iconbitmap('vitalize.ico')
     app = VitaLizeApp(root)
     root.mainloop()
 
