@@ -1,7 +1,5 @@
 # -*- mode: python ; coding: utf-8 -*-
 from PyInstaller.utils.hooks import collect_all
-import os
-import sys
 
 block_cipher = None
 
@@ -51,7 +49,7 @@ exe = EXE(
     name='Vitalize',
     debug=False,
     bootloader_ignore_signals=False,
-    strip=False,
+    strip=True,
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
@@ -63,9 +61,4 @@ exe = EXE(
     entitlements_file=None,
     icon='vitalize.ico',
     embed_manifest=True,
-    version_info={
-        'version': '1.0.0',
-        'company_name': 'Jiro Productions',
-        'file_description': 'Vitalize takes images and converts them to be usuable with the PSV theme tool',
-    },
 )
