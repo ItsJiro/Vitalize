@@ -1,5 +1,4 @@
 import tkinter as tk
-import ctypes
 from config.constants import SIZE_PRESETS
 from core.processor import ImageProcessor
 from ui.main_window import MainWindow
